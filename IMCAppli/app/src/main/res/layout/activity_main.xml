@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:stretchColumns="1,3">
+
+    <TableRow>
+        <TextView
+            android:id="@+id/label_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/weight"
+            android:textStyle="bold"
+            android:textColor="#FF0000"
+            />
+
+        <EditText
+            android:id="@+id/text_weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_span="3"
+            android:hint="@string/weight"
+            android:inputType="numberDecimal"
+            />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/label_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/size"
+            android:textStyle="bold"
+            android:textColor="#FF0000"
+            />
+
+        <EditText
+            android:id="@+id/text_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_span="3"
+            android:hint="@string/size"
+            android:inputType="numberDecimal"
+            />
+    </TableRow>
+
+    <RadioGroup
+        android:id="@+id/unit_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:checkedButton="@+id/unit_m">
+        <RadioButton
+            android:id="@+id/unit_cm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cm"/>
+        <RadioButton
+            android:id="@+id/unit_m"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/m" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/master"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/master_func"
+        android:layout_below="@id/unit_group"/>
+
+    <TableRow>
+        <Button
+            android:id="@+id/validate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/validate"
+            android:layout_span="2"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"/>
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reset"
+            android:layout_marginLeft="20dp"/>
+    </TableRow>
+
+
+    <TextView
+        android:id="@+id/label_res"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/results"
+        android:textStyle="bold"
+        android:layout_below="@id/validate"/>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/when_no_results"
+        android:layout_below="@id/label_res"/>
+
+</TableLayout>

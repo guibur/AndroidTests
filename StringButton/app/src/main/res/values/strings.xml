@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Oopsy</string>
+    <string name="hi">Hi %1$s, it is %2$d o\'clock.</string>
+</resources>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">EditeurTexte</string>
+    <string name="bold">Gras</string>
+    <string name="italic">Italique</string>
+    <string name="underlined">Souligné</string>
+    <string name="smiley">Smiley</string>
+    <string name="color_red">Rouge</string>
+    <string name="color_black">Noir</string>
+    <string name="color_blue">Bleu</string>
+    <string name="show">Afficher</string>
+    <string name="hide">Cacher</string>
+    <string name="edit">Éditer :</string>
+    <string name="preview">Prévisualisation</string>
+
+    <string name="smile">smile</string>
+    <string name="big_smile">big smile</string>
+    <string name="wink">wink</string>
+</resources>
